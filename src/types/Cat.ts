@@ -7,6 +7,13 @@ export type Cat = {
     created_at: string;
     original_filename: string;
     breeds: Array<Breed>;
+    favourite: Favourite;
+    votes: number;
+}
+
+type Favourite = {
+    id: number;
+    isFavourite: boolean;
 }
 
 type Breed = {

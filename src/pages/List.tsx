@@ -63,7 +63,17 @@ export default function List() {
 
           ) : (
             cats.map((cat) => (
-              <CatCard key={cat.id} url={cat.url} />
+              <CatCard
+                key={cat.id}
+                url={cat.url}
+                width={cat.width}
+                height={cat.height}
+                filename={cat.original_filename}
+                isFavourite={cat.favourite?.isFavourite}
+                favouriteId={cat.favourite?.id}
+                votes={cat.votes}
+                id={cat.id}
+              />
             ))
           )
           }
