@@ -7,7 +7,7 @@ export default function App() {
       {/* Navigation */}
       <nav className="flex items-center justify-between px-8 py-4 border-b bg-gray-500">
         <div className="text-xl font-semibold tracking-wide">
-          Cat App
+          The Cat API
         </div>
 
         <div className="flex gap-6">
