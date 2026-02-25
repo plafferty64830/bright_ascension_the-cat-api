@@ -3,14 +3,14 @@ import AppRouter from "./Router";
 
 export default function App() {
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen">
       {/* Navigation */}
       <nav className="flex items-center justify-between px-8 py-4 border-b bg-gray-500">
-        <div className="text-xl font-semibold tracking-wide">
+        <div className="text-xl font-semibold tracking-wide text-white">
           The Cat API
         </div>
 
-        <div className="flex gap-6">
+        <div className="flex gap-6 text-white">
           <NavLink
             to="/"
             className={({ isActive }) =>

@@ -51,6 +51,7 @@ export default function List() {
         <div
           className="grid gap-6 grid-cols-[repeat(auto-fill,minmax(200px,1fr))]"
         >
+          {/* if there is no cats uploaded by the user */}
           {cats === undefined || cats.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-20 text-center">
               <p className="text-xl font-medium text-gray-700">
@@ -62,7 +63,8 @@ export default function List() {
             </div>
 
           ) : (
-            cats.map((cat) => (
+            // if cats are defined and there is at least 1 - map and display the cats
+            cats?.map((cat) => (
               <CatCard
                 key={cat.id}
                 url={cat.url}
