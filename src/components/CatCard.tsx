@@ -48,7 +48,6 @@ export const CatCard = ({
 
     const handleVote = async (value: number) => {
         const response = await setVote(id, value);
-        console.log(response);
         if(response.status === 'success'){
             setVoteCount(voteCount + value);
         }
